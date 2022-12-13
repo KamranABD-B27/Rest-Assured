@@ -21,7 +21,7 @@ public class P01_HamCrestMatchersIntro {
         // Hamcrest Matchers comes from RestAssured dependency
         // import static org.hamcrest.MatcherAssert.*;
         // import static org.hamcrest.Matchers.*;
-        // Adding following static import we are not gonna us classnames
+        // Adding following static import we are not gonna use classnames
         // while we are calling method from related classes
         // Matchers hs 2 overloaded methods
         // - First one will take value to check
@@ -104,7 +104,7 @@ public class P01_HamCrestMatchersIntro {
 
         assertThat(numberLst,hasItems(greaterThan(70)));
 
-        //everyItem --> check each element into array about realted condition
+        //everyItem --> check each element into array about related condition
         assertThat(numberLst,everyItem(greaterThanOrEqualTo(1)));
 
         assertThat(numberLst,containsInRelativeOrder(3, 5, 1, 77, 44, 76));
